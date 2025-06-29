@@ -28,6 +28,7 @@ require_once 'welcome_template.php';
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,19 +40,22 @@ require_once 'welcome_template.php';
             text-align: center;
             padding-top: 50px;
         }
+
         .container {
             max-width: 600px;
             margin: 0 auto;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1 class="my-5">Hi, <b><?php echo $templateData['username']; ?></b>. Welcome to our site.</h1>
+        <h1 class="my-5">Hi, <b><?php echo $templateData['username']; ?></b>. Welcome To Our Demo Login System.</h1>
         <p>
             <a href="<?php echo $templateData['resetPasswordUrl']; ?>" class="btn btn-warning">Reset Your Password</a>
             <a href="<?php echo $templateData['logoutUrl']; ?>" class="btn btn-danger ml-3">Sign Out of Your Account</a>
         </p>
     </div>
 </body>
+
 </html>
